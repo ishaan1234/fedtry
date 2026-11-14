@@ -8,6 +8,9 @@
 # Needs SYNAPSE_AUTH_TOKEN exported in the shell that runs sbatch.
 set -euo pipefail
 cd "$SLURM_SUBMIT_DIR"
+
+# Push this job's log to GitHub when it ends, whether it succeeded or failed.
+trap 'bash scripts/push_results.sh "$SLURM_JOB_NAME $SLURM_JOB_ID ended" || true' EXIT
 source env/bin/activate
 SKIP_MSD="${SKIP_MSD:-1}" bash get_data.sh data
 find data/fets2022 -name "*_seg.nii.gz" | wc -l

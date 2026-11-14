@@ -185,6 +185,26 @@ local fine-tuning.
 | `GRID` | `experiments/pilot.txt` | 30 runs: 10 methods × 3 settings, fold 0. `experiments/full.txt` has 285 runs: 19 methods × 3 settings × 5 folds |
 | `MAXPAR` | `4` | B200 jobs running at once |
 
+### Results go to GitHub automatically
+
+Every job pushes its log, and training jobs push their run files (config, logs, per-case scores)
+into `results/` every 2 hours and when they end, including after a crash. Images, preprocessed
+data and checkpoints never leave HiPerGator. This needs push access from HiPerGator, once:
+
+```bash
+ssh-keygen -t ed25519 -N "" -f ~/.ssh/fedtry_deploy && cat ~/.ssh/fedtry_deploy.pub
+```
+
+Paste the printed key at https://github.com/ishaan1234/fedtry/settings/keys/new and tick
+**Allow write access**. Then:
+
+```bash
+printf 'Host github.com\n  IdentityFile ~/.ssh/fedtry_deploy\n' >> ~/.ssh/config && git remote set-url origin git@github.com:ishaan1234/fedtry.git && ssh -T git@github.com
+```
+
+If compute nodes cannot reach GitHub, results stay committed in the clone; push them from the
+login node with `bash scripts/push_results.sh`.
+
 Finished runs are skipped and interrupted runs resume from a checkpoint,
 so resubmitting `run_all.sh` after a time-out or failure is always safe.
 Edit the `#SBATCH` lines in `scripts/` if your account or partition differ.

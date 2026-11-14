@@ -11,6 +11,13 @@
 # Finished runs are skipped and interrupted runs resume, so resubmitting is safe.
 set -euo pipefail
 cd "$SLURM_SUBMIT_DIR"
+
+# Push results to GitHub every PUSH_EVERY seconds while training, and once at the end
+# (success or failure), so progress and errors are visible remotely.
+PUSH_EVERY="${PUSH_EVERY:-7200}"
+( while sleep "$PUSH_EVERY"; do bash scripts/push_results.sh "progress: array task $SLURM_ARRAY_TASK_ID" || true; done ) &
+PUSHER=$!
+trap 'kill $PUSHER 2>/dev/null; bash scripts/push_results.sh "array task $SLURM_ARRAY_TASK_ID ended" || true' EXIT
 source env/bin/activate
 GRID="${GRID:-experiments/pilot.txt}"
 ARGS=$(sed -n "$((SLURM_ARRAY_TASK_ID + 1))p" "$GRID")
