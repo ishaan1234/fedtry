@@ -1,0 +1,19 @@
+#!/bin/bash
+#SBATCH --job-name=fedtry-train
+#SBATCH --account=gaitor_club
+#SBATCH --partition=hpg-b200
+#SBATCH --gres=gpu:b200:1
+#SBATCH --cpus-per-task=16
+#SBATCH --mem=128gb
+#SBATCH --time=20:00:00
+#SBATCH --output=logs/%x-%A_%a.out
+# One array task = one line of the grid file (default experiments/pilot.txt).
+# Finished runs are skipped and interrupted runs resume, so resubmitting is safe.
+set -euo pipefail
+cd "$SLURM_SUBMIT_DIR"
+source env/bin/activate
+GRID="${GRID:-experiments/pilot.txt}"
+ARGS=$(sed -n "$((SLURM_ARRAY_TASK_ID + 1))p" "$GRID")
+echo "task $SLURM_ARRAY_TASK_ID: $ARGS"
+python -m pflseg.train --data_dir data/fets2022_prep \
+  --partition partitions/fets2022/partitioning_1.csv --workers 12 --out runs $ARGS

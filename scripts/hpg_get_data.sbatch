@@ -10,4 +10,4 @@ set -euo pipefail
 cd "$SLURM_SUBMIT_DIR"
 source env/bin/activate
 SKIP_MSD="${SKIP_MSD:-1}" bash get_data.sh data
-ls data/fets2022 | head
+find data/fets2022 -name "*_seg.nii.gz" | wc -l

@@ -30,7 +30,8 @@ syn.login(authToken=os.environ["SYNAPSE_AUTH_TOKEN"], silent=True)
 f = syn.get("syn29266807", downloadLocation=sys.argv[1])
 print("saved", f.path)
 PY
-  unzip -q "$OUT/fets2022/MICCAI_FeTS2022_TrainingData.zip" -d "$OUT/fets2022"
+  unzip -q "$OUT/fets2022/MICCAI_FeTS2022_TrainingData.zip" -d "$OUT/fets2022" \
+    && rm "$OUT/fets2022/MICCAI_FeTS2022_TrainingData.zip"
 else
   echo "SYNAPSE_AUTH_TOKEN not set: skipping FeTS 2022."
 fi

@@ -137,54 +137,101 @@ per-case metrics, and paired Wilcoxon tests.
 
 | Component | State |
 | --- | --- |
-| Network, block naming, 18 split specifications | ✅ done, unit-tested |
-| Federated averaging over shared blocks only | ✅ done, unit-tested |
-| Institution partitions and cross-validation folds | ✅ in `partitions/` |
-| Data pipeline and preprocessing | ⬜ next |
-| Training loop and baselines | ⬜ |
-| Missing-sequence and site-size generators | ⬜ |
-| Pilot grid, diagnostic, statistics | ⬜ |
+| Network, block naming, 18 split specifications | ✅ unit-tested |
+| Federated averaging over shared blocks only | ✅ unit-tested |
+| Preprocessing (crop, z-score, pad), clients, folds, missing sequences | ✅ unit-tested, checked on real MSD scans |
+| Training, validation-based model selection, local fine-tuning, resume | ✅ end-to-end tested on CPU |
+| Per-case Dice and HD95, results tables with paired tests | ✅ tested |
+| Pilot grid on FeTS 2022 | ⬜ ready to submit |
+| Early-epoch diagnostic | ⬜ after the pilot |
 
 **No experimental results exist yet.** The numbers in this README come from the cited papers.
 
-## Quick start
+## Run it on HiPerGator
+
+Once, from `/blue/<group>/$USER`:
 
 ```bash
-pip install -r requirements.txt
-```
-
-```bash
-python -m pytest -q tests
+git clone https://github.com/ishaan1234/fedtry && cd fedtry
 ```
 
 ```bash
-bash get_data.sh ./data
+module load python && python -m venv env && source env/bin/activate
 ```
 
-```python
-from pflseg.model import build_unet
-from pflseg.splits import all_splits
-
-net = build_unet()                         # 4 MRI sequences in, 3 tumour regions out
-split = all_splits()["encoder_local"]
-names = [n for n, _ in net.named_parameters()]
-print(len(split.shared_names(names)), "tensors shared,",
-      len(split.local_names(names)), "kept local")
+```bash
+pip install torch --index-url https://download.pytorch.org/whl/cu128 && pip install -r requirements.txt
 ```
+
+Then the whole study is one command: it downloads FeTS 2022 (if not already there),
+preprocesses it, and submits the training grid as a job array.
+
+```bash
+export SYNAPSE_AUTH_TOKEN='<view+download token>' && bash run_all.sh
+```
+
+When the training jobs finish (partial results work too):
+
+```bash
+python scripts/analyze.py
+```
+
+`results/summary.md` then holds one table per heterogeneity setting: Dice per region, HD95,
+per-site and worst-site Dice, and a Holm-corrected paired Wilcoxon test against FedAvg with
+local fine-tuning.
+
+| Option | Default | Meaning |
+| --- | --- | --- |
+| `GRID` | `experiments/pilot.txt` | 30 runs: 10 methods × 3 settings, fold 0. `experiments/full.txt` has 285 runs: 19 methods × 3 settings × 5 folds |
+| `MAXPAR` | `4` | B200 jobs running at once |
+
+Finished runs are skipped and interrupted runs resume from a checkpoint,
+so resubmitting `run_all.sh` after a time-out or failure is always safe.
+Edit the `#SBATCH` lines in `scripts/` if your account or partition differ.
+
+### One run by hand
+
+```bash
+python -m pflseg.train --data_dir data/fets2022_prep \
+  --partition partitions/fets2022/partitioning_1.csv \
+  --split decoder_local --het site_modality --fold 0
+```
+
+Writes `runs/<name>/`: `config.json` (sites, case counts, sequences held), `train_log.csv`,
+`val_log.csv`, `test_cases.csv` (per case and region) and `summary.json`.
+
+| Setting (`--het`) | Sites | MRI sequences |
+| --- | --- | --- |
+| `site` | 23 real institutions | all four everywhere |
+| `modality` | same sizes, cases dealt at random | each site holds 4, 3, 2 or 1 |
+| `site_modality` | 23 real institutions | each site holds 4, 3, 2 or 1 |
+
+Training follows Manthe et al.: 300 rounds of one local epoch, SGD (lr 0.01, ×0.995 per round),
+batch 4, 128³ patches, Dice + cross-entropy loss, validation every 10 rounds. Each site keeps the
+round where its own validation Dice was best; `+ft` runs then fine-tune locally for 30 epochs.
 
 ## Repository layout
 
 ```
 pflseg/
-  model.py     3D U-Net and the mapping from parameters to ten named blocks
-  splits.py    the grid of splits
-  fed.py       weighted averaging restricted to shared parameters
-tests/         unit tests for all of the above
+  model.py      3D U-Net and the mapping from parameters to ten named blocks
+  splits.py     the grid of splits
+  fed.py        weighted averaging restricted to shared parameters
+  data.py       clients, folds, missing-sequence assignment, patch loading, augmentation
+  evaluate.py   sliding-window prediction, Dice, HD95
+  train.py      one run: federated training, model selection, fine-tuning, testing
+scripts/
+  prepare_fets.py   NIfTI -> cropped, normalized arrays
+  analyze.py        runs/ -> results/summary.md and CSV tables
+  hpg_*.sbatch      SLURM jobs: download, preprocess, training array
+experiments/    grid files, one run per line
+run_all.sh      submits the whole pipeline with job dependencies
+get_data.sh     downloads FeTS 2022 (token) and optionally MSD Task01
+tests/          unit and end-to-end tests
 partitions/
   fets2022/        institution partitions from the FeTS challenge
   manthe_folds/    five-fold federated cross-validation folds
   fedmepd_brats/   BraTS 2018 and 2020 client splits from FedMEPD
-get_data.sh    downloads the public dataset, documents the gated one
 ```
 
 ## Background reading

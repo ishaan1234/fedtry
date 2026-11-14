@@ -1,0 +1,30 @@
+--split fedavg --finetune_epochs 30 --het site --fold 0
+--split fedavg --het site --fold 0
+--split local --het site --fold 0
+--split norm_local --het site --fold 0
+--split in_local_1 --het site --fold 0
+--split out_local_1 --het site --fold 0
+--split decoder_local --het site --fold 0
+--split encoder_local --het site --fold 0
+--split stem_head_local --het site --fold 0
+--split bottleneck_local --het site --fold 0
+--split fedavg --finetune_epochs 30 --het modality --fold 0
+--split fedavg --het modality --fold 0
+--split local --het modality --fold 0
+--split norm_local --het modality --fold 0
+--split in_local_1 --het modality --fold 0
+--split out_local_1 --het modality --fold 0
+--split decoder_local --het modality --fold 0
+--split encoder_local --het modality --fold 0
+--split stem_head_local --het modality --fold 0
+--split bottleneck_local --het modality --fold 0
+--split fedavg --finetune_epochs 30 --het site_modality --fold 0
+--split fedavg --het site_modality --fold 0
+--split local --het site_modality --fold 0
+--split norm_local --het site_modality --fold 0
+--split in_local_1 --het site_modality --fold 0
+--split out_local_1 --het site_modality --fold 0
+--split decoder_local --het site_modality --fold 0
+--split encoder_local --het site_modality --fold 0
+--split stem_head_local --het site_modality --fold 0
+--split bottleneck_local --het site_modality --fold 0

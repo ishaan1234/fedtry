@@ -1,4 +1,8 @@
 torch
 monai
 nibabel
+numpy
+scipy
+pandas
 pytest
+synapseclient
