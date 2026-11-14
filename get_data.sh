@@ -7,9 +7,12 @@ mkdir -p "$OUT/msd_task01" "$OUT/fets2022"
 
 # 1) Public, no registration: Medical Segmentation Decathlon Task01 (BraTS 2016/17 subset)
 #    484 labelled 4-modality cases, 7.6 GB, licence CC-BY-SA 4.0. No institution labels.
-curl -L -C - -o "$OUT/msd_task01/Task01_BrainTumour.tar" \
-  https://msd-for-monai.s3-us-west-2.amazonaws.com/Task01_BrainTumour.tar
-tar -xf "$OUT/msd_task01/Task01_BrainTumour.tar" -C "$OUT/msd_task01"
+#    Set SKIP_MSD=1 to skip it (FeTS 2022 already contains these cases).
+if [ "${SKIP_MSD:-0}" != "1" ]; then
+  curl -L -C - -o "$OUT/msd_task01/Task01_BrainTumour.tar" \
+    https://msd-for-monai.s3-us-west-2.amazonaws.com/Task01_BrainTumour.tar
+  tar -xf "$OUT/msd_task01/Task01_BrainTumour.tar" -C "$OUT/msd_task01"
+fi
 
 # 2) Gated: FeTS 2022 (= BraTS 2021 training set, 1251 cases, with institution partition).
 #    Needs an approved data request (https://www.synapse.org/Synapse:syn54079892/wiki/626845)
