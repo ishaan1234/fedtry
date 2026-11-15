@@ -114,3 +114,20 @@ def test_train_end_to_end(synthetic, tmp_path, split, het, ft):
                  "--split", split, "--het", het, "--rounds", "2", "--val_every", "1",
                  "--patch", "32", "--batch", "2", "--workers", "0",
                  "--finetune_epochs", str(ft), "--out", str(tmp_path)]) == run  # skipped
+
+
+def test_busy_run_is_left_alone(synthetic, tmp_path):
+    from pflseg.train import main, parse_args, run_name
+    argv = ["--data_dir", str(synthetic), "--partition", str(synthetic / "part.csv"),
+            "--split", "fedavg", "--rounds", "1", "--patch", "32", "--batch", "2",
+            "--workers", "0", "--out", str(tmp_path)]
+    run = tmp_path / run_name(parse_args(argv))
+    run.mkdir(parents=True)
+    (run / "lock").write_text("12345 othernode\n")
+    assert main(argv) == run
+    assert not (run / "summary.json").exists()          # left alone while the lock is fresh
+    import os, time
+    old = time.time() - 3600
+    os.utime(run / "lock", (old, old))                   # a dead job's lock
+    main(argv)
+    assert (run / "summary.json").exists() and not (run / "lock").exists()

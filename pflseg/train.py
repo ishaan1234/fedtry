@@ -73,6 +73,9 @@ def parse_args(argv=None):
     return ap.parse_args(argv)
 
 
+LOCK_STALE = 1800  # seconds
+
+
 def run_name(a) -> str:
     m = a.split + (f"+ft{a.finetune_epochs}" if a.finetune_epochs else "")
     cap = f"__cap{a.client_cap}" if a.client_cap else ""
@@ -102,6 +105,17 @@ def main(argv=None):
         print(f"[skip] {run_dir} already finished")
         return run_dir
     run_dir.mkdir(parents=True, exist_ok=True)
+
+    # Refuse to run if another job is working on this run right now. The lock is
+    # refreshed every step; one untouched for LOCK_STALE seconds is from a dead job.
+    lock = run_dir / "lock"
+    if lock.exists() and time.time() - lock.stat().st_mtime < LOCK_STALE:
+        print(f"[busy] {run_dir} is being run by another job ({lock.read_text().strip()})")
+        return run_dir
+    lock.write_text(f"{os.environ.get('SLURM_JOB_ID', 'local')} {os.uname().nodename}\n")
+
+    def touch():
+        os.utime(lock)
 
     # ---------------------------------------------------------------- setup
     index = load_index(a.data_dir)
@@ -189,6 +203,7 @@ def main(argv=None):
             torch.nn.utils.clip_grad_norm_(net.parameters(), a.clip)
             opt.step()
             losses.append(loss.item())
+            touch()
         if cur is not None:
             on_end(cur)
         return float(np.mean(losses)) if losses else float("nan")
@@ -197,6 +212,7 @@ def main(argv=None):
         load_model(model)
         rows = []
         for c in cases:
+            touch()
             img, seg = cache.get(c)
             x = torch.from_numpy(img).to(dev).float()[None] * masks[k]
             gt = labels_to_regions(torch.from_numpy(seg).to(dev)[None])[0]
@@ -331,6 +347,7 @@ def main(argv=None):
     (run_dir / "summary.json").write_text(json.dumps(summary, indent=2))
     if ckpt.exists():
         ckpt.unlink()
+    lock.unlink(missing_ok=True)
     print(json.dumps(summary, indent=2))
     return run_dir
 
