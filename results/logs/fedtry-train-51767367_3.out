@@ -1,3 +1,4 @@
 task 3: --split norm_local --finetune_epochs 30 --het modality --fold 0
 run modality__norm_local+ft30__f0__s0: 23 sites, 793 train / 199 val / 259 test cases, device cuda
 split norm_local: 24 shared tensors, 36 local tensors
+round 1/300 loss 1.1616 64s  eta 5.3h
