@@ -1,0 +1,3 @@
+task 9: --split fedavg --finetune_epochs 30 --het site --fold 1
+run site__fedavg+ft30__f1__s0: 23 sites, 797 train / 199 val / 255 test cases, device cuda
+split fedavg: 60 shared tensors, 0 local tensors
