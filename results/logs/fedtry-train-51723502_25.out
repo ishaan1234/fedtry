@@ -1,1 +1,4 @@
 task 25: --split out_local_1 --het site_modality --fold 0
+run site_modality__out_local_1__f0__s0: 23 sites, 793 train / 199 val / 259 test cases, device cuda
+split out_local_1: 58 shared tensors, 2 local tensors
+resumed from round 20
