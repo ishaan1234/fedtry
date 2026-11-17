@@ -1,2 +1,3 @@
 task 15: --split out_local_1 --het modality --fold 0
 [skip] runs/modality__out_local_1__f0__s0 already finished
+push_results: pushed (array task 15 ended)
