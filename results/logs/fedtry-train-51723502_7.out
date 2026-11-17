@@ -1,1 +1,2 @@
 task 7: --split encoder_local --het site --fold 0
+[skip] runs/site__encoder_local__f0__s0 already finished

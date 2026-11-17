@@ -1,2 +1,3 @@
 task 1: --split fedavg --het site --fold 0
 [skip] runs/site__fedavg__f0__s0 already finished
+push_results: pushed (array task 1 ended)

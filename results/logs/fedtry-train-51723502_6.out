@@ -1,1 +1,2 @@
 task 6: --split decoder_local --het site --fold 0
+[skip] runs/site__decoder_local__f0__s0 already finished
