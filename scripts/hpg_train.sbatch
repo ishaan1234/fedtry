@@ -3,14 +3,15 @@
 #SBATCH --account=gaitor_club
 #SBATCH --partition=hpg-b200
 #SBATCH --gres=gpu:b200:1
-#SBATCH --cpus-per-task=6
-#SBATCH --mem=48gb
+#SBATCH --cpus-per-task=4
+#SBATCH --mem=32gb
 #SBATCH --time=20:00:00
 #SBATCH --output=logs/%x-%A_%a.out
 # One array task = one line of the grid file (default experiments/pilot.txt).
 # Finished runs are skipped, interrupted runs resume, and a run already being
 # trained by another job is left alone, so resubmitting is safe.
-# 6 CPUs and 48 GB let 4 tasks fit in the group limit of 32 CPUs and 250 GB.
+# 4 CPUs and 32 GB per task: 3 tasks use about 40% of the group limit
+# (32 CPUs, 250 GB, 8 GPUs). Loader workers = CPUs - 1.
 set -euo pipefail
 cd "$SLURM_SUBMIT_DIR"
 
@@ -25,4 +26,4 @@ GRID="${GRID:-experiments/pilot.txt}"
 ARGS=$(sed -n "$((SLURM_ARRAY_TASK_ID + 1))p" "$GRID")
 echo "task $SLURM_ARRAY_TASK_ID: $ARGS"
 python -m pflseg.train --data_dir data/fets2022_prep \
-  --partition partitions/fets2022/partitioning_1.csv --workers 5 --out runs $ARGS
+  --partition partitions/fets2022/partitioning_1.csv --workers $(( ${SLURM_CPUS_PER_TASK:-4} - 1 )) --out runs $ARGS

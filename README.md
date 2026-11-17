@@ -183,7 +183,10 @@ local fine-tuning.
 | Option | Default | Meaning |
 | --- | --- | --- |
 | `GRID` | `experiments/pilot.txt` | 30 runs: 10 methods × 3 settings, fold 0. `experiments/full.txt` has 285 runs: 19 methods × 3 settings × 5 folds |
-| `MAXPAR` | `4` | B200 jobs running at once |
+| `MAXPAR` | `3` | B200 jobs running at once |
+| `CPUS`, `MEM` | `4`, `32gb` | per job; with `MAXPAR=3` this is about 40% of the group quota |
+| `AFTER` | none | job ID to wait for before starting |
+| `ARRAY` | all lines | grid lines to submit, e.g. `2-29` |
 
 ### Results go to GitHub automatically
 
