@@ -1,0 +1,2 @@
+task 21: --split fedavg --het site_modality --fold 0
+[skip] runs/site_modality__fedavg__f0__s0 already finished

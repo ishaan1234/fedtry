@@ -1,1 +1,2 @@
 task 20: --split fedavg --finetune_epochs 30 --het site_modality --fold 0
+[skip] runs/site_modality__fedavg+ft30__f0__s0 already finished

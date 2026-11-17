@@ -1,2 +1,3 @@
 task 17: --split encoder_local --het modality --fold 0
 [skip] runs/modality__encoder_local__f0__s0 already finished
+push_results: pushed (array task 17 ended)
