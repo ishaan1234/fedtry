@@ -1,2 +1,3 @@
 task 18: --split stem_head_local --het modality --fold 0
 [skip] runs/modality__stem_head_local__f0__s0 already finished
+push_results: pushed (array task 18 ended)

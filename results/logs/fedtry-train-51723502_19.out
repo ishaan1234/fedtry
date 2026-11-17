@@ -1,1 +1,2 @@
 task 19: --split bottleneck_local --het modality --fold 0
+[skip] runs/modality__bottleneck_local__f0__s0 already finished
