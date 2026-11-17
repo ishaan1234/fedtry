@@ -1,2 +1,3 @@
 task 13: --split norm_local --het modality --fold 0
 [skip] runs/modality__norm_local__f0__s0 already finished
+push_results: pushed (array task 13 ended)
