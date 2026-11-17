@@ -1,0 +1,1 @@
+task 20: --split fedavg --finetune_epochs 30 --het site_modality --fold 0
