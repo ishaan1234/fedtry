@@ -22,7 +22,7 @@
   "finetune_lr": 0.001,
   "client_cap": 0,
   "min_cases": 0,
-  "workers": 12,
+  "workers": 5,
   "amp": "bf16",
   "no_hd95": false,
   "out": "runs",
