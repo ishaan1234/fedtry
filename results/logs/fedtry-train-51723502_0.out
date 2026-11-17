@@ -1,0 +1,2 @@
+task 0: --split fedavg --finetune_epochs 30 --het site --fold 0
+[skip] runs/site__fedavg+ft30__f0__s0 already finished

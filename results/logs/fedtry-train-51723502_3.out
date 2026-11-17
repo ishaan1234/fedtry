@@ -1,0 +1,2 @@
+task 3: --split norm_local --het site --fold 0
+[skip] runs/site__norm_local__f0__s0 already finished
