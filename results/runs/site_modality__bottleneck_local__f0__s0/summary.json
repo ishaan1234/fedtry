@@ -1,0 +1,9 @@
+{
+  "run_name": "site_modality__bottleneck_local__f0__s0",
+  "n_test_cases": 259,
+  "hours": 1.85,
+  "dice_WT": 0.8914568597192308,
+  "dice_TC": 0.7905078741345629,
+  "dice_ET": 0.6839531296006152,
+  "dice_mean": 0.7886392878181363
+}
