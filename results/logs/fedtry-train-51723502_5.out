@@ -1,1 +1,2 @@
 task 5: --split out_local_1 --het site --fold 0
+[skip] runs/site__out_local_1__f0__s0 already finished
