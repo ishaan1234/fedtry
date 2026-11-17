@@ -4,6 +4,7 @@
 #   bash run_all.sh                       # pilot grid, 30 runs, 4 GPUs at a time
 #   GRID=experiments/full.txt MAXPAR=8 bash run_all.sh
 #   ARRAY=2-29 bash run_all.sh            # only these grid lines (0-based)
+#   GRID=experiments/round2.txt bash run_all.sh   # 141 runs: 5 folds + split+fine-tuning
 # When the training jobs finish:  python scripts/analyze.py
 set -euo pipefail
 cd "$(dirname "$0")"

@@ -1,0 +1,141 @@
+--split norm_local --finetune_epochs 30 --het site --fold 0
+--split in_local_1 --finetune_epochs 30 --het site --fold 0
+--split out_local_1 --finetune_epochs 30 --het site --fold 0
+--split norm_local --finetune_epochs 30 --het modality --fold 0
+--split in_local_1 --finetune_epochs 30 --het modality --fold 0
+--split out_local_1 --finetune_epochs 30 --het modality --fold 0
+--split norm_local --finetune_epochs 30 --het site_modality --fold 0
+--split in_local_1 --finetune_epochs 30 --het site_modality --fold 0
+--split out_local_1 --finetune_epochs 30 --het site_modality --fold 0
+--split fedavg --finetune_epochs 30 --het site --fold 1
+--split norm_local --finetune_epochs 30 --het site --fold 1
+--split in_local_1 --finetune_epochs 30 --het site --fold 1
+--split out_local_1 --finetune_epochs 30 --het site --fold 1
+--split fedavg --het site --fold 1
+--split local --het site --fold 1
+--split norm_local --het site --fold 1
+--split in_local_1 --het site --fold 1
+--split out_local_1 --het site --fold 1
+--split encoder_local --het site --fold 1
+--split decoder_local --het site --fold 1
+--split fedavg --finetune_epochs 30 --het modality --fold 1
+--split norm_local --finetune_epochs 30 --het modality --fold 1
+--split in_local_1 --finetune_epochs 30 --het modality --fold 1
+--split out_local_1 --finetune_epochs 30 --het modality --fold 1
+--split fedavg --het modality --fold 1
+--split local --het modality --fold 1
+--split norm_local --het modality --fold 1
+--split in_local_1 --het modality --fold 1
+--split out_local_1 --het modality --fold 1
+--split encoder_local --het modality --fold 1
+--split decoder_local --het modality --fold 1
+--split fedavg --finetune_epochs 30 --het site_modality --fold 1
+--split norm_local --finetune_epochs 30 --het site_modality --fold 1
+--split in_local_1 --finetune_epochs 30 --het site_modality --fold 1
+--split out_local_1 --finetune_epochs 30 --het site_modality --fold 1
+--split fedavg --het site_modality --fold 1
+--split local --het site_modality --fold 1
+--split norm_local --het site_modality --fold 1
+--split in_local_1 --het site_modality --fold 1
+--split out_local_1 --het site_modality --fold 1
+--split encoder_local --het site_modality --fold 1
+--split decoder_local --het site_modality --fold 1
+--split fedavg --finetune_epochs 30 --het site --fold 2
+--split norm_local --finetune_epochs 30 --het site --fold 2
+--split in_local_1 --finetune_epochs 30 --het site --fold 2
+--split out_local_1 --finetune_epochs 30 --het site --fold 2
+--split fedavg --het site --fold 2
+--split local --het site --fold 2
+--split norm_local --het site --fold 2
+--split in_local_1 --het site --fold 2
+--split out_local_1 --het site --fold 2
+--split encoder_local --het site --fold 2
+--split decoder_local --het site --fold 2
+--split fedavg --finetune_epochs 30 --het modality --fold 2
+--split norm_local --finetune_epochs 30 --het modality --fold 2
+--split in_local_1 --finetune_epochs 30 --het modality --fold 2
+--split out_local_1 --finetune_epochs 30 --het modality --fold 2
+--split fedavg --het modality --fold 2
+--split local --het modality --fold 2
+--split norm_local --het modality --fold 2
+--split in_local_1 --het modality --fold 2
+--split out_local_1 --het modality --fold 2
+--split encoder_local --het modality --fold 2
+--split decoder_local --het modality --fold 2
+--split fedavg --finetune_epochs 30 --het site_modality --fold 2
+--split norm_local --finetune_epochs 30 --het site_modality --fold 2
+--split in_local_1 --finetune_epochs 30 --het site_modality --fold 2
+--split out_local_1 --finetune_epochs 30 --het site_modality --fold 2
+--split fedavg --het site_modality --fold 2
+--split local --het site_modality --fold 2
+--split norm_local --het site_modality --fold 2
+--split in_local_1 --het site_modality --fold 2
+--split out_local_1 --het site_modality --fold 2
+--split encoder_local --het site_modality --fold 2
+--split decoder_local --het site_modality --fold 2
+--split fedavg --finetune_epochs 30 --het site --fold 3
+--split norm_local --finetune_epochs 30 --het site --fold 3
+--split in_local_1 --finetune_epochs 30 --het site --fold 3
+--split out_local_1 --finetune_epochs 30 --het site --fold 3
+--split fedavg --het site --fold 3
+--split local --het site --fold 3
+--split norm_local --het site --fold 3
+--split in_local_1 --het site --fold 3
+--split out_local_1 --het site --fold 3
+--split encoder_local --het site --fold 3
+--split decoder_local --het site --fold 3
+--split fedavg --finetune_epochs 30 --het modality --fold 3
+--split norm_local --finetune_epochs 30 --het modality --fold 3
+--split in_local_1 --finetune_epochs 30 --het modality --fold 3
+--split out_local_1 --finetune_epochs 30 --het modality --fold 3
+--split fedavg --het modality --fold 3
+--split local --het modality --fold 3
+--split norm_local --het modality --fold 3
+--split in_local_1 --het modality --fold 3
+--split out_local_1 --het modality --fold 3
+--split encoder_local --het modality --fold 3
+--split decoder_local --het modality --fold 3
+--split fedavg --finetune_epochs 30 --het site_modality --fold 3
+--split norm_local --finetune_epochs 30 --het site_modality --fold 3
+--split in_local_1 --finetune_epochs 30 --het site_modality --fold 3
+--split out_local_1 --finetune_epochs 30 --het site_modality --fold 3
+--split fedavg --het site_modality --fold 3
+--split local --het site_modality --fold 3
+--split norm_local --het site_modality --fold 3
+--split in_local_1 --het site_modality --fold 3
+--split out_local_1 --het site_modality --fold 3
+--split encoder_local --het site_modality --fold 3
+--split decoder_local --het site_modality --fold 3
+--split fedavg --finetune_epochs 30 --het site --fold 4
+--split norm_local --finetune_epochs 30 --het site --fold 4
+--split in_local_1 --finetune_epochs 30 --het site --fold 4
+--split out_local_1 --finetune_epochs 30 --het site --fold 4
+--split fedavg --het site --fold 4
+--split local --het site --fold 4
+--split norm_local --het site --fold 4
+--split in_local_1 --het site --fold 4
+--split out_local_1 --het site --fold 4
+--split encoder_local --het site --fold 4
+--split decoder_local --het site --fold 4
+--split fedavg --finetune_epochs 30 --het modality --fold 4
+--split norm_local --finetune_epochs 30 --het modality --fold 4
+--split in_local_1 --finetune_epochs 30 --het modality --fold 4
+--split out_local_1 --finetune_epochs 30 --het modality --fold 4
+--split fedavg --het modality --fold 4
+--split local --het modality --fold 4
+--split norm_local --het modality --fold 4
+--split in_local_1 --het modality --fold 4
+--split out_local_1 --het modality --fold 4
+--split encoder_local --het modality --fold 4
+--split decoder_local --het modality --fold 4
+--split fedavg --finetune_epochs 30 --het site_modality --fold 4
+--split norm_local --finetune_epochs 30 --het site_modality --fold 4
+--split in_local_1 --finetune_epochs 30 --het site_modality --fold 4
+--split out_local_1 --finetune_epochs 30 --het site_modality --fold 4
+--split fedavg --het site_modality --fold 4
+--split local --het site_modality --fold 4
+--split norm_local --het site_modality --fold 4
+--split in_local_1 --het site_modality --fold 4
+--split out_local_1 --het site_modality --fold 4
+--split encoder_local --het site_modality --fold 4
+--split decoder_local --het site_modality --fold 4
