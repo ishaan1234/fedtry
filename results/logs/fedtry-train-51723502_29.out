@@ -1,0 +1,17 @@
+task 29: --split bottleneck_local --het site_modality --fold 0
+run site_modality__bottleneck_local__f0__s0: 23 sites, 793 train / 199 val / 259 test cases, device cuda
+split bottleneck_local: 54 shared tensors, 6 local tensors
+round 1/300 loss 1.1698 60s  eta 4.9h
+round 2/300 loss 0.7405 20s  eta 3.3h
+round 3/300 loss 0.5721 20s  eta 2.7h
+round 4/300 loss 0.5059 20s  eta 2.5h
+round 5/300 loss 0.4682 20s  eta 2.3h
+round 6/300 loss 0.4550 20s  eta 2.2h
+round 7/300 loss 0.4340 20s  eta 2.1h
+round 8/300 loss 0.4293 20s  eta 2.0h
+round 9/300 loss 0.4118 20s  eta 2.0h
+round 10/300 loss 0.4128 43s  eta 2.1h
+round 11/300 loss 0.4027 20s  eta 2.1h
+round 12/300 loss 0.4026 20s  eta 2.0h
+round 13/300 loss 0.3952 20s  eta 2.0h
+round 14/300 loss 0.3875 20s  eta 1.9h

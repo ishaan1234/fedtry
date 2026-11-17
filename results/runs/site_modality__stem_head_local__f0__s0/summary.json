@@ -1,0 +1,9 @@
+{
+  "run_name": "site_modality__stem_head_local__f0__s0",
+  "n_test_cases": 259,
+  "hours": 1.83,
+  "dice_WT": 0.8954875469907526,
+  "dice_TC": 0.7929151377697974,
+  "dice_ET": 0.707166021149657,
+  "dice_mean": 0.798522901970069
+}
