@@ -1,0 +1,2 @@
+task 11: --split fedavg --het modality --fold 0
+[skip] runs/modality__fedavg__f0__s0 already finished
