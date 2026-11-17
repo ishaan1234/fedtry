@@ -1,2 +1,3 @@
 task 10: --split fedavg --finetune_epochs 30 --het modality --fold 0
 [skip] runs/modality__fedavg+ft30__f0__s0 already finished
+push_results: pushed (array task 10 ended)
