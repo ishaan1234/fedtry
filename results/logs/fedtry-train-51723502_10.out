@@ -1,0 +1,1 @@
+task 10: --split fedavg --finetune_epochs 30 --het modality --fold 0
