@@ -1,0 +1,1 @@
+task 17: --split encoder_local --het modality --fold 0
