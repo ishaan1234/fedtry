@@ -1,0 +1,1 @@
+task 13: --split norm_local --het modality --fold 0
