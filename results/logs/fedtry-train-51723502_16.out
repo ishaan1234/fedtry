@@ -1,0 +1,2 @@
+task 16: --split decoder_local --het modality --fold 0
+[skip] runs/modality__decoder_local__f0__s0 already finished
