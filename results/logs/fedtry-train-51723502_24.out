@@ -1,2 +1,3 @@
 task 24: --split in_local_1 --het site_modality --fold 0
 [skip] runs/site_modality__in_local_1__f0__s0 already finished
+push_results: pushed (array task 24 ended)
