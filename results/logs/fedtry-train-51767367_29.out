@@ -260,3 +260,53 @@ round 256/300 loss 0.1577 20s  eta 0.3h
 round 257/300 loss 0.1592 20s  eta 0.3h
 round 258/300 loss 0.1570 20s  eta 0.3h
 round 259/300 loss 0.1570 20s  eta 0.2h
+round 260/300 loss 0.1588 37s  eta 0.2h
+round 261/300 loss 0.1533 20s  eta 0.2h
+round 262/300 loss 0.1558 20s  eta 0.2h
+round 263/300 loss 0.1522 20s  eta 0.2h
+round 264/300 loss 0.1559 20s  eta 0.2h
+round 265/300 loss 0.1521 20s  eta 0.2h
+round 266/300 loss 0.1542 20s  eta 0.2h
+round 267/300 loss 0.1542 20s  eta 0.2h
+round 268/300 loss 0.1513 20s  eta 0.2h
+round 269/300 loss 0.1540 20s  eta 0.2h
+round 270/300 loss 0.1553 37s  eta 0.2h
+round 271/300 loss 0.1547 20s  eta 0.2h
+round 272/300 loss 0.1538 20s  eta 0.2h
+round 273/300 loss 0.1539 20s  eta 0.2h
+round 274/300 loss 0.1536 20s  eta 0.2h
+round 275/300 loss 0.1530 20s  eta 0.2h
+round 276/300 loss 0.1528 20s  eta 0.1h
+round 277/300 loss 0.1532 20s  eta 0.1h
+round 278/300 loss 0.1542 20s  eta 0.1h
+round 279/300 loss 0.1533 20s  eta 0.1h
+round 280/300 loss 0.1519 37s  eta 0.1h
+round 281/300 loss 0.1519 20s  eta 0.1h
+round 282/300 loss 0.1529 20s  eta 0.1h
+round 283/300 loss 0.1516 20s  eta 0.1h
+round 284/300 loss 0.1505 20s  eta 0.1h
+round 285/300 loss 0.1573 20s  eta 0.1h
+round 286/300 loss 0.1538 20s  eta 0.1h
+round 287/300 loss 0.1524 20s  eta 0.1h
+round 288/300 loss 0.1517 20s  eta 0.1h
+round 289/300 loss 0.1524 20s  eta 0.1h
+round 290/300 loss 0.1516 37s  eta 0.1h
+round 291/300 loss 0.1505 20s  eta 0.1h
+round 292/300 loss 0.1518 20s  eta 0.0h
+round 293/300 loss 0.1527 20s  eta 0.0h
+round 294/300 loss 0.1514 20s  eta 0.0h
+round 295/300 loss 0.1521 20s  eta 0.0h
+round 296/300 loss 0.1508 20s  eta 0.0h
+round 297/300 loss 0.1483 20s  eta 0.0h
+round 298/300 loss 0.1492 20s  eta 0.0h
+round 299/300 loss 0.1520 20s  eta 0.0h
+round 300/300 loss 0.1496 37s  eta 0.0h
+{
+  "run_name": "modality__encoder_local__f1__s0",
+  "n_test_cases": 255,
+  "hours": 1.85,
+  "dice_WT": 0.8682215806706759,
+  "dice_TC": 0.7478869206407383,
+  "dice_ET": 0.668440275812034,
+  "dice_mean": 0.7615162590411494
+}

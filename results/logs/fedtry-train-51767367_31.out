@@ -1,0 +1,44 @@
+task 31: --split fedavg --finetune_epochs 30 --het site_modality --fold 1
+run site_modality__fedavg+ft30__f1__s0: 23 sites, 797 train / 199 val / 255 test cases, device cuda
+split fedavg: 60 shared tensors, 0 local tensors
+round 1/300 loss 1.1655 61s  eta 5.1h
+round 2/300 loss 0.7292 20s  eta 3.4h
+round 3/300 loss 0.5649 20s  eta 2.8h
+round 4/300 loss 0.5012 20s  eta 2.5h
+round 5/300 loss 0.4739 20s  eta 2.3h
+round 6/300 loss 0.4569 20s  eta 2.2h
+round 7/300 loss 0.4331 20s  eta 2.1h
+round 8/300 loss 0.4254 20s  eta 2.1h
+round 9/300 loss 0.4181 20s  eta 2.0h
+round 10/300 loss 0.4072 40s  eta 2.1h
+round 11/300 loss 0.4000 20s  eta 2.1h
+round 12/300 loss 0.3929 20s  eta 2.0h
+round 13/300 loss 0.3824 20s  eta 2.0h
+round 14/300 loss 0.3797 20s  eta 2.0h
+round 15/300 loss 0.3823 20s  eta 1.9h
+round 16/300 loss 0.3703 20s  eta 1.9h
+round 17/300 loss 0.3670 20s  eta 1.9h
+round 18/300 loss 0.3648 20s  eta 1.8h
+round 19/300 loss 0.3632 20s  eta 1.8h
+round 20/300 loss 0.3668 36s  eta 1.9h
+round 21/300 loss 0.3467 20s  eta 1.8h
+round 22/300 loss 0.3533 20s  eta 1.8h
+round 23/300 loss 0.3517 20s  eta 1.8h
+round 24/300 loss 0.3562 20s  eta 1.8h
+round 25/300 loss 0.3396 20s  eta 1.8h
+round 26/300 loss 0.3482 20s  eta 1.8h
+round 27/300 loss 0.3420 20s  eta 1.7h
+round 28/300 loss 0.3391 20s  eta 1.7h
+round 29/300 loss 0.3421 20s  eta 1.7h
+round 30/300 loss 0.3389 35s  eta 1.7h
+round 31/300 loss 0.3410 20s  eta 1.7h
+round 32/300 loss 0.3391 20s  eta 1.7h
+round 33/300 loss 0.3259 20s  eta 1.7h
+round 34/300 loss 0.3272 21s  eta 1.7h
+round 35/300 loss 0.3299 20s  eta 1.7h
+round 36/300 loss 0.3378 20s  eta 1.7h
+round 37/300 loss 0.3325 20s  eta 1.7h
+round 38/300 loss 0.3281 20s  eta 1.6h
+round 39/300 loss 0.3273 20s  eta 1.6h
+round 40/300 loss 0.3341 36s  eta 1.7h
+round 41/300 loss 0.3263 20s  eta 1.6h
