@@ -1,0 +1,12 @@
+task 40: --split encoder_local --het site_modality --fold 1
+run site_modality__encoder_local__f1__s0: 23 sites, 797 train / 199 val / 255 test cases, device cuda
+split encoder_local: 30 shared tensors, 30 local tensors
+round 1/300 loss 1.1655 70s  eta 5.8h
+round 2/300 loss 0.7312 20s  eta 3.7h
+round 3/300 loss 0.5707 20s  eta 3.0h
+round 4/300 loss 0.4992 20s  eta 2.7h
+round 5/300 loss 0.4645 20s  eta 2.5h
+round 6/300 loss 0.4374 20s  eta 2.3h
+round 7/300 loss 0.4199 20s  eta 2.2h
+round 8/300 loss 0.4017 20s  eta 2.1h
+round 9/300 loss 0.3866 20s  eta 2.1h
