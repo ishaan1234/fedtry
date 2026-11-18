@@ -1,0 +1,9 @@
+{
+  "run_name": "modality__fedavg+ft30__f1__s0",
+  "n_test_cases": 255,
+  "hours": 2.16,
+  "dice_WT": 0.892962870552483,
+  "dice_TC": 0.7896909535171551,
+  "dice_ET": 0.7013245724430356,
+  "dice_mean": 0.7946594655042245
+}
