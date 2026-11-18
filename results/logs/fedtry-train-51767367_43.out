@@ -1,0 +1,3 @@
+task 43: --split norm_local --finetune_epochs 30 --het site --fold 2
+run site__norm_local+ft30__f2__s0: 23 sites, 800 train / 201 val / 250 test cases, device cuda
+split norm_local: 24 shared tensors, 36 local tensors
