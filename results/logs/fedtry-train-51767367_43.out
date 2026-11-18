@@ -300,3 +300,5 @@ round 296/300 loss 0.1179 22s  eta 0.0h
 round 297/300 loss 0.1171 23s  eta 0.0h
 round 298/300 loss 0.1134 23s  eta 0.0h
 round 299/300 loss 0.1182 22s  eta 0.0h
+round 300/300 loss 0.1162 38s  eta 0.0h
+push_results: pushed (progress: array task 43)
