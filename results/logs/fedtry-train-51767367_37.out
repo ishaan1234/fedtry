@@ -1,0 +1,14 @@
+task 37: --split norm_local --het site_modality --fold 1
+run site_modality__norm_local__f1__s0: 23 sites, 797 train / 199 val / 255 test cases, device cuda
+split norm_local: 24 shared tensors, 36 local tensors
+round 1/300 loss 1.1655 61s  eta 5.1h
+round 2/300 loss 0.7337 20s  eta 3.4h
+round 3/300 loss 0.5856 20s  eta 2.8h
+round 4/300 loss 0.5268 20s  eta 2.5h
+round 5/300 loss 0.4967 20s  eta 2.3h
+round 6/300 loss 0.4757 20s  eta 2.2h
+round 7/300 loss 0.4551 20s  eta 2.1h
+round 8/300 loss 0.4458 20s  eta 2.0h
+round 9/300 loss 0.4330 20s  eta 2.0h
+round 10/300 loss 0.4254 47s  eta 2.2h
+round 11/300 loss 0.4135 20s  eta 2.1h

@@ -334,3 +334,4 @@ finetune site23: best epoch 5, val 0.8263 (start 0.8219)
   "dice_ET": 0.687992386390691,
   "dice_mean": 0.785234359913556
 }
+push_results: pushed (array task 34 ended)
