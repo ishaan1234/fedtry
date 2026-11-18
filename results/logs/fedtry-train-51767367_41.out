@@ -235,3 +235,78 @@ round 231/300 loss 0.2304 20s  eta 0.4h
 round 232/300 loss 0.2297 20s  eta 0.4h
 round 233/300 loss 0.2276 20s  eta 0.4h
 round 234/300 loss 0.2300 20s  eta 0.4h
+round 235/300 loss 0.2296 20s  eta 0.4h
+round 236/300 loss 0.2298 20s  eta 0.4h
+round 237/300 loss 0.2289 20s  eta 0.4h
+round 238/300 loss 0.2257 20s  eta 0.4h
+round 239/300 loss 0.2276 20s  eta 0.4h
+round 240/300 loss 0.2297 36s  eta 0.4h
+round 241/300 loss 0.2269 20s  eta 0.4h
+round 242/300 loss 0.2245 20s  eta 0.4h
+round 243/300 loss 0.2261 20s  eta 0.3h
+round 244/300 loss 0.2225 20s  eta 0.3h
+round 245/300 loss 0.2264 20s  eta 0.3h
+round 246/300 loss 0.2230 20s  eta 0.3h
+round 247/300 loss 0.2261 20s  eta 0.3h
+round 248/300 loss 0.2230 20s  eta 0.3h
+round 249/300 loss 0.2305 20s  eta 0.3h
+round 250/300 loss 0.2258 37s  eta 0.3h
+round 251/300 loss 0.2234 22s  eta 0.3h
+round 252/300 loss 0.2250 20s  eta 0.3h
+round 253/300 loss 0.2223 20s  eta 0.3h
+round 254/300 loss 0.2221 20s  eta 0.3h
+round 255/300 loss 0.2233 20s  eta 0.3h
+round 256/300 loss 0.2210 20s  eta 0.3h
+round 257/300 loss 0.2217 21s  eta 0.3h
+round 258/300 loss 0.2209 20s  eta 0.3h
+round 259/300 loss 0.2198 20s  eta 0.2h
+round 260/300 loss 0.2221 56s  eta 0.2h
+round 261/300 loss 0.2203 20s  eta 0.2h
+round 262/300 loss 0.2208 20s  eta 0.2h
+round 263/300 loss 0.2238 20s  eta 0.2h
+round 264/300 loss 0.2177 20s  eta 0.2h
+round 265/300 loss 0.2218 20s  eta 0.2h
+round 266/300 loss 0.2196 20s  eta 0.2h
+round 267/300 loss 0.2182 20s  eta 0.2h
+round 268/300 loss 0.2174 20s  eta 0.2h
+round 269/300 loss 0.2155 20s  eta 0.2h
+round 270/300 loss 0.2166 37s  eta 0.2h
+round 271/300 loss 0.2186 20s  eta 0.2h
+round 272/300 loss 0.2224 20s  eta 0.2h
+round 273/300 loss 0.2204 20s  eta 0.2h
+round 274/300 loss 0.2165 20s  eta 0.2h
+round 275/300 loss 0.2154 20s  eta 0.2h
+round 276/300 loss 0.2152 20s  eta 0.1h
+round 277/300 loss 0.2160 20s  eta 0.1h
+round 278/300 loss 0.2151 20s  eta 0.1h
+round 279/300 loss 0.2165 20s  eta 0.1h
+round 280/300 loss 0.2154 37s  eta 0.1h
+round 281/300 loss 0.2210 20s  eta 0.1h
+round 282/300 loss 0.2148 20s  eta 0.1h
+round 283/300 loss 0.2119 21s  eta 0.1h
+round 284/300 loss 0.2164 20s  eta 0.1h
+round 285/300 loss 0.2141 20s  eta 0.1h
+round 286/300 loss 0.2150 20s  eta 0.1h
+round 287/300 loss 0.2136 20s  eta 0.1h
+round 288/300 loss 0.2137 20s  eta 0.1h
+round 289/300 loss 0.2135 20s  eta 0.1h
+round 290/300 loss 0.2101 37s  eta 0.1h
+round 291/300 loss 0.2145 20s  eta 0.1h
+round 292/300 loss 0.2133 20s  eta 0.0h
+round 293/300 loss 0.2131 20s  eta 0.0h
+round 294/300 loss 0.2127 20s  eta 0.0h
+round 295/300 loss 0.2130 20s  eta 0.0h
+round 296/300 loss 0.2126 20s  eta 0.0h
+round 297/300 loss 0.2093 20s  eta 0.0h
+round 298/300 loss 0.2099 20s  eta 0.0h
+round 299/300 loss 0.2128 20s  eta 0.0h
+round 300/300 loss 0.2112 36s  eta 0.0h
+{
+  "run_name": "site_modality__decoder_local__f1__s0",
+  "n_test_cases": 255,
+  "hours": 1.89,
+  "dice_WT": 0.8567033320836934,
+  "dice_TC": 0.7711392902533708,
+  "dice_ET": 0.6762360054525409,
+  "dice_mean": 0.7680262092632018
+}
