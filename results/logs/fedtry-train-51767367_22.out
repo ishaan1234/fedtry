@@ -301,3 +301,36 @@ round 297/300 loss 0.1718 20s  eta 0.0h
 round 298/300 loss 0.1742 20s  eta 0.0h
 round 299/300 loss 0.1758 20s  eta 0.0h
 round 300/300 loss 0.1760 36s  eta 0.0h
+push_results: pushed (progress: array task 22)
+finetune site01: best epoch 3, val 0.8903 (start 0.8882)
+finetune site02: best epoch 1, val 0.9253 (start 0.9248)
+finetune site03: best epoch 17, val 0.8222 (start 0.8170)
+finetune site04: best epoch 23, val 0.7938 (start 0.7914)
+finetune site05: best epoch 30, val 0.8485 (start 0.8426)
+finetune site06: best epoch 30, val 0.9027 (start 0.9014)
+finetune site07: best epoch 0, val 0.3377 (start 0.3377)
+finetune site08: best epoch 0, val 0.8923 (start 0.8923)
+finetune site09: best epoch 5, val 0.7189 (start 0.7186)
+finetune site10: best epoch 0, val 0.4696 (start 0.4696)
+finetune site11: best epoch 2, val 0.7136 (start 0.7130)
+finetune site12: best epoch 0, val 0.7628 (start 0.7628)
+finetune site13: best epoch 0, val 0.9089 (start 0.9089)
+finetune site14: best epoch 0, val 0.7841 (start 0.7841)
+finetune site15: best epoch 28, val 0.6491 (start 0.6272)
+finetune site16: best epoch 3, val 0.7724 (start 0.7715)
+finetune site17: best epoch 27, val 0.9204 (start 0.9191)
+finetune site18: best epoch 18, val 0.7418 (start 0.7390)
+finetune site19: best epoch 27, val 0.6510 (start 0.6437)
+finetune site20: best epoch 2, val 0.9017 (start 0.8994)
+finetune site21: best epoch 20, val 0.7351 (start 0.7222)
+finetune site22: best epoch 0, val 0.8949 (start 0.8949)
+finetune site23: best epoch 3, val 0.8590 (start 0.8583)
+{
+  "run_name": "modality__in_local_1+ft30__f1__s0",
+  "n_test_cases": 255,
+  "hours": 2.16,
+  "dice_WT": 0.8843331392399769,
+  "dice_TC": 0.7753399442714355,
+  "dice_ET": 0.6920924018426721,
+  "dice_mean": 0.7839218284513614
+}
