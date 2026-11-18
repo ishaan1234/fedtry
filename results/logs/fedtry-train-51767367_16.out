@@ -1,3 +1,12 @@
 task 16: --split in_local_1 --het site --fold 1
 run site__in_local_1__f1__s0: 23 sites, 797 train / 199 val / 255 test cases, device cuda
 split in_local_1: 54 shared tensors, 6 local tensors
+round 1/300 loss 1.1580 71s  eta 5.9h
+round 2/300 loss 0.6539 20s  eta 3.8h
+round 3/300 loss 0.4332 20s  eta 3.1h
+round 4/300 loss 0.3533 20s  eta 2.7h
+round 5/300 loss 0.3166 20s  eta 2.5h
+round 6/300 loss 0.2902 20s  eta 2.3h
+round 7/300 loss 0.2710 20s  eta 2.2h
+round 8/300 loss 0.2554 20s  eta 2.1h
+round 9/300 loss 0.2464 20s  eta 2.1h

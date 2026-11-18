@@ -299,3 +299,15 @@ round 295/300 loss 0.1449 21s  eta 0.0h
 round 296/300 loss 0.1444 20s  eta 0.0h
 round 297/300 loss 0.1436 22s  eta 0.0h
 round 298/300 loss 0.1430 22s  eta 0.0h
+push_results: pushed (progress: array task 14)
+round 299/300 loss 0.1466 21s  eta 0.0h
+round 300/300 loss 0.1436 39s  eta 0.0h
+{
+  "run_name": "site__local__f1__s0",
+  "n_test_cases": 255,
+  "hours": 2.06,
+  "dice_WT": 0.8825821430343661,
+  "dice_TC": 0.8562835607071094,
+  "dice_ET": 0.8140127241509139,
+  "dice_mean": 0.8509594759641298
+}
