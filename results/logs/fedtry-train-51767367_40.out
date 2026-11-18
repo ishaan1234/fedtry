@@ -311,3 +311,4 @@ round 300/300 loss 0.1397 40s  eta 0.0h
   "dice_ET": 0.673241859127902,
   "dice_mean": 0.7711114278177466
 }
+push_results: pushed (array task 40 ended)
