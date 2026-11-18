@@ -1,0 +1,6 @@
+task 45: --split out_local_1 --finetune_epochs 30 --het site --fold 2
+run site__out_local_1+ft30__f2__s0: 23 sites, 800 train / 201 val / 250 test cases, device cuda
+split out_local_1: 58 shared tensors, 2 local tensors
+round 1/300 loss 1.1575 62s  eta 5.1h
+round 2/300 loss 0.7195 21s  eta 3.4h
+round 3/300 loss 0.5590 21s  eta 2.8h
