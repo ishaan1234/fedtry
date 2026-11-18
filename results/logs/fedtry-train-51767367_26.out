@@ -259,3 +259,54 @@ round 255/300 loss 0.2018 20s  eta 0.3h
 round 256/300 loss 0.2030 20s  eta 0.3h
 round 257/300 loss 0.2009 20s  eta 0.3h
 round 258/300 loss 0.2044 20s  eta 0.3h
+round 259/300 loss 0.2039 20s  eta 0.2h
+round 260/300 loss 0.2021 35s  eta 0.2h
+round 261/300 loss 0.2030 20s  eta 0.2h
+round 262/300 loss 0.2026 20s  eta 0.2h
+round 263/300 loss 0.1980 20s  eta 0.2h
+round 264/300 loss 0.1974 20s  eta 0.2h
+round 265/300 loss 0.1974 20s  eta 0.2h
+round 266/300 loss 0.2020 20s  eta 0.2h
+round 267/300 loss 0.2001 20s  eta 0.2h
+round 268/300 loss 0.1987 20s  eta 0.2h
+round 269/300 loss 0.1990 20s  eta 0.2h
+round 270/300 loss 0.1997 35s  eta 0.2h
+round 271/300 loss 0.1974 20s  eta 0.2h
+round 272/300 loss 0.1968 20s  eta 0.2h
+round 273/300 loss 0.1965 20s  eta 0.2h
+round 274/300 loss 0.1966 20s  eta 0.2h
+round 275/300 loss 0.1966 20s  eta 0.2h
+round 276/300 loss 0.1978 20s  eta 0.1h
+round 277/300 loss 0.1970 20s  eta 0.1h
+round 278/300 loss 0.1970 20s  eta 0.1h
+round 279/300 loss 0.1967 21s  eta 0.1h
+round 280/300 loss 0.1958 35s  eta 0.1h
+round 281/300 loss 0.1947 20s  eta 0.1h
+round 282/300 loss 0.1946 20s  eta 0.1h
+round 283/300 loss 0.1962 20s  eta 0.1h
+round 284/300 loss 0.1942 20s  eta 0.1h
+round 285/300 loss 0.1977 20s  eta 0.1h
+round 286/300 loss 0.1953 20s  eta 0.1h
+round 287/300 loss 0.1958 20s  eta 0.1h
+round 288/300 loss 0.1974 20s  eta 0.1h
+round 289/300 loss 0.1970 20s  eta 0.1h
+round 290/300 loss 0.1972 35s  eta 0.1h
+round 291/300 loss 0.1952 20s  eta 0.1h
+round 292/300 loss 0.1964 20s  eta 0.0h
+round 293/300 loss 0.1962 20s  eta 0.0h
+round 294/300 loss 0.1927 20s  eta 0.0h
+round 295/300 loss 0.1954 20s  eta 0.0h
+round 296/300 loss 0.1955 20s  eta 0.0h
+round 297/300 loss 0.1942 20s  eta 0.0h
+round 298/300 loss 0.1930 20s  eta 0.0h
+round 299/300 loss 0.1959 20s  eta 0.0h
+round 300/300 loss 0.1957 35s  eta 0.0h
+{
+  "run_name": "modality__norm_local__f1__s0",
+  "n_test_cases": 255,
+  "hours": 1.86,
+  "dice_WT": 0.894315082176011,
+  "dice_TC": 0.7843072673244401,
+  "dice_ET": 0.6971987041455789,
+  "dice_mean": 0.7919403512153435
+}
