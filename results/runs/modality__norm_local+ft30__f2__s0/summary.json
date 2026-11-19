@@ -1,0 +1,9 @@
+{
+  "run_name": "modality__norm_local+ft30__f2__s0",
+  "n_test_cases": 250,
+  "hours": 2.17,
+  "dice_WT": 0.8986800547237693,
+  "dice_TC": 0.8068723570646514,
+  "dice_ET": 0.720137333857,
+  "dice_mean": 0.8085632485484734
+}
