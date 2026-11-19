@@ -301,3 +301,13 @@ round 297/300 loss 0.2231 20s  eta 0.0h
 round 298/300 loss 0.2219 22s  eta 0.0h
 round 299/300 loss 0.2240 21s  eta 0.0h
 round 300/300 loss 0.2187 37s  eta 0.0h
+push_results: pushed (progress: array task 68)
+{
+  "run_name": "site_modality__fedavg__f2__s0",
+  "n_test_cases": 250,
+  "hours": 2.0,
+  "dice_WT": 0.8805429264111992,
+  "dice_TC": 0.7745172091218256,
+  "dice_ET": 0.6728823332977343,
+  "dice_mean": 0.7759808229435864
+}
