@@ -1,0 +1,12 @@
+task 60: --split in_local_1 --het modality --fold 2
+run modality__in_local_1__f2__s0: 23 sites, 800 train / 201 val / 250 test cases, device cuda
+split in_local_1: 54 shared tensors, 6 local tensors
+round 1/300 loss 1.1633 69s  eta 5.7h
+round 2/300 loss 0.7342 20s  eta 3.7h
+round 3/300 loss 0.5782 20s  eta 3.0h
+round 4/300 loss 0.5120 20s  eta 2.7h
+round 5/300 loss 0.4695 20s  eta 2.5h
+round 6/300 loss 0.4535 20s  eta 2.3h
+round 7/300 loss 0.4357 20s  eta 2.2h
+round 8/300 loss 0.4233 20s  eta 2.1h
+round 9/300 loss 0.4103 20s  eta 2.1h
