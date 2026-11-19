@@ -1,0 +1,33 @@
+task 65: --split norm_local --finetune_epochs 30 --het site_modality --fold 2
+run site_modality__norm_local+ft30__f2__s0: 23 sites, 800 train / 201 val / 250 test cases, device cuda
+split norm_local: 24 shared tensors, 36 local tensors
+round 1/300 loss 1.1664 70s  eta 5.8h
+round 2/300 loss 0.7385 20s  eta 3.7h
+round 3/300 loss 0.5896 20s  eta 3.0h
+round 4/300 loss 0.5284 20s  eta 2.7h
+round 5/300 loss 0.4935 20s  eta 2.5h
+round 6/300 loss 0.4762 20s  eta 2.3h
+round 7/300 loss 0.4589 20s  eta 2.2h
+round 8/300 loss 0.4429 20s  eta 2.1h
+round 9/300 loss 0.4383 20s  eta 2.1h
+round 10/300 loss 0.4337 98s  eta 2.7h
+round 11/300 loss 0.4133 20s  eta 2.6h
+round 12/300 loss 0.4187 20s  eta 2.5h
+round 13/300 loss 0.4042 20s  eta 2.4h
+round 14/300 loss 0.3943 20s  eta 2.3h
+round 15/300 loss 0.3942 20s  eta 2.3h
+round 16/300 loss 0.3910 20s  eta 2.2h
+round 17/300 loss 0.3786 20s  eta 2.2h
+round 18/300 loss 0.3881 20s  eta 2.1h
+round 19/300 loss 0.3829 20s  eta 2.1h
+round 20/300 loss 0.3716 39s  eta 2.1h
+round 21/300 loss 0.3687 25s  eta 2.1h
+round 22/300 loss 0.3719 25s  eta 2.1h
+round 23/300 loss 0.3671 20s  eta 2.1h
+round 24/300 loss 0.3591 21s  eta 2.1h
+round 25/300 loss 0.3561 20s  eta 2.0h
+round 26/300 loss 0.3572 21s  eta 2.0h
+round 27/300 loss 0.3486 21s  eta 2.0h
+round 28/300 loss 0.3788 21s  eta 2.0h
+round 29/300 loss 0.3651 22s  eta 1.9h
+round 30/300 loss 0.3489 37s  eta 2.0h
