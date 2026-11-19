@@ -1,0 +1,12 @@
+task 68: --split fedavg --het site_modality --fold 2
+run site_modality__fedavg__f2__s0: 23 sites, 800 train / 201 val / 250 test cases, device cuda
+split fedavg: 60 shared tensors, 0 local tensors
+round 1/300 loss 1.1664 71s  eta 5.9h
+round 2/300 loss 0.7329 20s  eta 3.8h
+round 3/300 loss 0.5700 20s  eta 3.1h
+round 4/300 loss 0.5025 20s  eta 2.7h
+round 5/300 loss 0.4719 20s  eta 2.5h
+round 6/300 loss 0.4459 21s  eta 2.4h
+round 7/300 loss 0.4377 20s  eta 2.2h
+round 8/300 loss 0.4230 20s  eta 2.2h
+round 9/300 loss 0.4178 20s  eta 2.1h
