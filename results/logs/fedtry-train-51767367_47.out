@@ -1,0 +1,26 @@
+task 47: --split local --het site --fold 2
+run site__local__f2__s0: 23 sites, 800 train / 201 val / 250 test cases, device cuda
+split local: 0 shared tensors, 60 local tensors
+round 1/300 loss 1.1575 58s  eta 4.8h
+round 2/300 loss 0.7783 20s  eta 3.2h
+round 3/300 loss 0.6511 20s  eta 2.7h
+round 4/300 loss 0.5995 20s  eta 2.4h
+round 5/300 loss 0.5654 20s  eta 2.3h
+round 6/300 loss 0.5470 20s  eta 2.2h
+round 7/300 loss 0.5255 20s  eta 2.1h
+round 8/300 loss 0.5026 20s  eta 2.0h
+round 9/300 loss 0.4916 20s  eta 2.0h
+round 10/300 loss 0.4805 44s  eta 2.1h
+round 11/300 loss 0.4625 20s  eta 2.1h
+round 12/300 loss 0.4541 20s  eta 2.0h
+round 13/300 loss 0.4456 20s  eta 2.0h
+round 14/300 loss 0.4318 20s  eta 2.0h
+round 15/300 loss 0.4287 20s  eta 1.9h
+round 16/300 loss 0.4161 20s  eta 1.9h
+round 17/300 loss 0.4038 20s  eta 1.9h
+round 18/300 loss 0.3996 20s  eta 1.8h
+round 19/300 loss 0.3992 20s  eta 1.8h
+round 20/300 loss 0.3873 38s  eta 1.9h
+round 21/300 loss 0.3836 20s  eta 1.9h
+round 22/300 loss 0.3744 20s  eta 1.8h
+round 23/300 loss 0.3666 20s  eta 1.8h
