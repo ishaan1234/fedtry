@@ -1,0 +1,1 @@
+task 86: --split fedavg --finetune_epochs 30 --het modality --fold 3
