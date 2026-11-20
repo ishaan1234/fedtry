@@ -1,0 +1,1 @@
+task 90: --split fedavg --het modality --fold 3
