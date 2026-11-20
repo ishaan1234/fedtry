@@ -1,0 +1,287 @@
+{
+  "data_dir": "data/fets2022_prep",
+  "partition": "partitions/fets2022/partitioning_1.csv",
+  "split": "norm_local",
+  "het": "site",
+  "fold": 3,
+  "n_folds": 5,
+  "seed": 0,
+  "data_seed": 0,
+  "rounds": 300,
+  "batch": 4,
+  "patch": 128,
+  "lr": 0.01,
+  "lr_decay": 0.995,
+  "momentum": 0.9,
+  "wd": 1e-05,
+  "clip": 12.0,
+  "val_every": 10,
+  "val_overlap": 0.25,
+  "test_overlap": 0.5,
+  "finetune_epochs": 0,
+  "finetune_lr": 0.001,
+  "client_cap": 0,
+  "min_cases": 0,
+  "workers": 3,
+  "amp": "bf16",
+  "no_hd95": false,
+  "out": "runs",
+  "tag": "",
+  "device": "cuda",
+  "run_name": "site__norm_local__f3__s0",
+  "clients": {
+    "site01": {
+      "n_train": 327,
+      "n_val": 82,
+      "n_test": 102,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site02": {
+      "n_train": 4,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site03": {
+      "n_train": 10,
+      "n_val": 2,
+      "n_test": 3,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site04": {
+      "n_train": 30,
+      "n_val": 8,
+      "n_test": 9,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site05": {
+      "n_train": 14,
+      "n_val": 4,
+      "n_test": 4,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site06": {
+      "n_train": 22,
+      "n_val": 5,
+      "n_test": 7,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site07": {
+      "n_train": 8,
+      "n_val": 2,
+      "n_test": 2,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site08": {
+      "n_train": 6,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site09": {
+      "n_train": 2,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site10": {
+      "n_train": 6,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site11": {
+      "n_train": 9,
+      "n_val": 2,
+      "n_test": 3,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site12": {
+      "n_train": 7,
+      "n_val": 2,
+      "n_test": 2,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site13": {
+      "n_train": 22,
+      "n_val": 6,
+      "n_test": 7,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site14": {
+      "n_train": 4,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site15": {
+      "n_train": 9,
+      "n_val": 2,
+      "n_test": 2,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site16": {
+      "n_train": 19,
+      "n_val": 5,
+      "n_test": 6,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site17": {
+      "n_train": 6,
+      "n_val": 1,
+      "n_test": 2,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site18": {
+      "n_train": 245,
+      "n_val": 61,
+      "n_test": 76,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site19": {
+      "n_train": 2,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site20": {
+      "n_train": 22,
+      "n_val": 5,
+      "n_test": 6,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site21": {
+      "n_train": 22,
+      "n_val": 6,
+      "n_test": 7,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site22": {
+      "n_train": 5,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    },
+    "site23": {
+      "n_train": 3,
+      "n_val": 1,
+      "n_test": 1,
+      "modalities": [
+        "t1",
+        "t1ce",
+        "t2",
+        "flair"
+      ]
+    }
+  }
+}
