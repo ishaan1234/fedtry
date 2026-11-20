@@ -1,0 +1,3 @@
+task 92: --split norm_local --het modality --fold 3
+run modality__norm_local__f3__s0: 23 sites, 804 train / 201 val / 246 test cases, device cuda
+split norm_local: 24 shared tensors, 36 local tensors
