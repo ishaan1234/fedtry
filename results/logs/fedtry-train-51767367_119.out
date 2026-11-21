@@ -1,0 +1,20 @@
+task 119: --split fedavg --finetune_epochs 30 --het modality --fold 4
+run modality__fedavg+ft30__f4__s0: 23 sites, 807 train / 203 val / 241 test cases, device cuda
+split fedavg: 60 shared tensors, 0 local tensors
+round 1/300 loss 1.1614 68s  eta 5.7h
+round 2/300 loss 0.7261 20s  eta 3.7h
+round 3/300 loss 0.5607 20s  eta 3.0h
+round 4/300 loss 0.4944 20s  eta 2.7h
+round 5/300 loss 0.4621 20s  eta 2.5h
+round 6/300 loss 0.4382 20s  eta 2.3h
+round 7/300 loss 0.4311 20s  eta 2.2h
+round 8/300 loss 0.4211 20s  eta 2.1h
+round 9/300 loss 0.4138 20s  eta 2.1h
+round 10/300 loss 0.4071 42s  eta 2.2h
+round 11/300 loss 0.4029 20s  eta 2.1h
+round 12/300 loss 0.3953 20s  eta 2.1h
+round 13/300 loss 0.3794 20s  eta 2.0h
+round 14/300 loss 0.3731 20s  eta 2.0h
+round 15/300 loss 0.3696 20s  eta 2.0h
+round 16/300 loss 0.3718 20s  eta 1.9h
+round 17/300 loss 0.3671 20s  eta 1.9h
