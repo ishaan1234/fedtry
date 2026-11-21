@@ -258,3 +258,55 @@ round 254/300 loss 0.1141 20s  eta 0.3h
 round 255/300 loss 0.1131 20s  eta 0.3h
 round 256/300 loss 0.1144 20s  eta 0.3h
 round 257/300 loss 0.1143 20s  eta 0.3h
+round 258/300 loss 0.1108 20s  eta 0.3h
+round 259/300 loss 0.1135 20s  eta 0.3h
+round 260/300 loss 0.1155 36s  eta 0.2h
+round 261/300 loss 0.1115 20s  eta 0.2h
+round 262/300 loss 0.1127 20s  eta 0.2h
+round 263/300 loss 0.1144 20s  eta 0.2h
+round 264/300 loss 0.1137 20s  eta 0.2h
+round 265/300 loss 0.1175 20s  eta 0.2h
+round 266/300 loss 0.1135 20s  eta 0.2h
+round 267/300 loss 0.1120 20s  eta 0.2h
+round 268/300 loss 0.1179 20s  eta 0.2h
+round 269/300 loss 0.1138 20s  eta 0.2h
+round 270/300 loss 0.1122 36s  eta 0.2h
+round 271/300 loss 0.1119 20s  eta 0.2h
+round 272/300 loss 0.1114 20s  eta 0.2h
+round 273/300 loss 0.1129 20s  eta 0.2h
+round 274/300 loss 0.1123 20s  eta 0.2h
+round 275/300 loss 0.1106 20s  eta 0.2h
+round 276/300 loss 0.1152 20s  eta 0.1h
+round 277/300 loss 0.1145 21s  eta 0.1h
+round 278/300 loss 0.1150 20s  eta 0.1h
+round 279/300 loss 0.1116 20s  eta 0.1h
+round 280/300 loss 0.1129 36s  eta 0.1h
+round 281/300 loss 0.1104 21s  eta 0.1h
+round 282/300 loss 0.1114 20s  eta 0.1h
+round 283/300 loss 0.1104 20s  eta 0.1h
+round 284/300 loss 0.1128 21s  eta 0.1h
+round 285/300 loss 0.1136 21s  eta 0.1h
+round 286/300 loss 0.1113 20s  eta 0.1h
+round 287/300 loss 0.1115 20s  eta 0.1h
+round 288/300 loss 0.1154 21s  eta 0.1h
+round 289/300 loss 0.1161 20s  eta 0.1h
+round 290/300 loss 0.1125 36s  eta 0.1h
+round 291/300 loss 0.1103 20s  eta 0.1h
+round 292/300 loss 0.1119 20s  eta 0.0h
+round 293/300 loss 0.1121 20s  eta 0.0h
+round 294/300 loss 0.1150 20s  eta 0.0h
+round 295/300 loss 0.1107 20s  eta 0.0h
+round 296/300 loss 0.1135 20s  eta 0.0h
+round 297/300 loss 0.1139 21s  eta 0.0h
+round 298/300 loss 0.1102 20s  eta 0.0h
+round 299/300 loss 0.1098 20s  eta 0.0h
+round 300/300 loss 0.1121 36s  eta 0.0h
+{
+  "run_name": "site__norm_local__f4__s0",
+  "n_test_cases": 241,
+  "hours": 1.87,
+  "dice_WT": 0.925660864537245,
+  "dice_TC": 0.8887620145817182,
+  "dice_ET": 0.8380852607765775,
+  "dice_mean": 0.8841693799651802
+}
