@@ -293,3 +293,12 @@ round 289/300 loss 0.2019 22s  eta 0.1h
 round 290/300 loss 0.2009 39s  eta 0.1h
 round 291/300 loss 0.1976 25s  eta 0.1h
 round 292/300 loss 0.1974 21s  eta 0.1h
+push_results: pushed (progress: array task 120)
+round 293/300 loss 0.1990 23s  eta 0.0h
+round 294/300 loss 0.2030 21s  eta 0.0h
+round 295/300 loss 0.1981 23s  eta 0.0h
+round 296/300 loss 0.2001 23s  eta 0.0h
+round 297/300 loss 0.2003 23s  eta 0.0h
+round 298/300 loss 0.2008 22s  eta 0.0h
+round 299/300 loss 0.1969 21s  eta 0.0h
+round 300/300 loss 0.1994 38s  eta 0.0h
