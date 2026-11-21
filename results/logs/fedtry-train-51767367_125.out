@@ -1,0 +1,32 @@
+task 125: --split norm_local --het modality --fold 4
+run modality__norm_local__f4__s0: 23 sites, 807 train / 203 val / 241 test cases, device cuda
+split norm_local: 24 shared tensors, 36 local tensors
+round 1/300 loss 1.1614 70s  eta 5.8h
+round 2/300 loss 0.7337 20s  eta 3.7h
+round 3/300 loss 0.5882 20s  eta 3.0h
+round 4/300 loss 0.5322 20s  eta 2.7h
+round 5/300 loss 0.5011 20s  eta 2.5h
+round 6/300 loss 0.4785 20s  eta 2.3h
+round 7/300 loss 0.4661 20s  eta 2.2h
+round 8/300 loss 0.4557 20s  eta 2.2h
+round 9/300 loss 0.4464 20s  eta 2.1h
+round 10/300 loss 0.4369 117s  eta 2.8h
+round 11/300 loss 0.4291 20s  eta 2.7h
+round 12/300 loss 0.4220 20s  eta 2.6h
+round 13/300 loss 0.4096 21s  eta 2.5h
+round 14/300 loss 0.4051 21s  eta 2.4h
+round 15/300 loss 0.3990 21s  eta 2.4h
+round 16/300 loss 0.3918 21s  eta 2.3h
+round 17/300 loss 0.3879 21s  eta 2.3h
+round 18/300 loss 0.3812 20s  eta 2.2h
+round 19/300 loss 0.3855 27s  eta 2.2h
+round 20/300 loss 0.4016 37s  eta 2.2h
+round 21/300 loss 0.3813 24s  eta 2.2h
+round 22/300 loss 0.3709 22s  eta 2.2h
+round 23/300 loss 0.3649 20s  eta 2.2h
+round 24/300 loss 0.3610 21s  eta 2.1h
+round 25/300 loss 0.3582 22s  eta 2.1h
+round 26/300 loss 0.3565 22s  eta 2.1h
+round 27/300 loss 0.3495 21s  eta 2.0h
+round 28/300 loss 0.3532 21s  eta 2.0h
+round 29/300 loss 0.3432 21s  eta 2.0h
