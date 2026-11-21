@@ -292,3 +292,45 @@ round 288/300 loss 0.1768 23s  eta 0.1h
 round 289/300 loss 0.1766 23s  eta 0.1h
 round 290/300 loss 0.1768 39s  eta 0.1h
 round 291/300 loss 0.1746 25s  eta 0.1h
+push_results: pushed (progress: array task 121)
+round 292/300 loss 0.1754 28s  eta 0.1h
+round 293/300 loss 0.1775 35s  eta 0.0h
+round 294/300 loss 0.1782 25s  eta 0.0h
+round 295/300 loss 0.1728 27s  eta 0.0h
+round 296/300 loss 0.1761 23s  eta 0.0h
+round 297/300 loss 0.1785 21s  eta 0.0h
+round 298/300 loss 0.1754 21s  eta 0.0h
+round 299/300 loss 0.1755 23s  eta 0.0h
+round 300/300 loss 0.1749 38s  eta 0.0h
+finetune site01: best epoch 21, val 0.8772 (start 0.8772)
+finetune site02: best epoch 0, val 0.8954 (start 0.8954)
+finetune site03: best epoch 0, val 0.8434 (start 0.8434)
+finetune site04: best epoch 12, val 0.7731 (start 0.7714)
+finetune site05: best epoch 29, val 0.8925 (start 0.8901)
+finetune site06: best epoch 12, val 0.8972 (start 0.8956)
+finetune site07: best epoch 26, val 0.3666 (start 0.3516)
+finetune site08: best epoch 0, val 0.8731 (start 0.8731)
+finetune site09: best epoch 0, val 0.7086 (start 0.7086)
+finetune site10: best epoch 0, val 0.6171 (start 0.6171)
+finetune site11: best epoch 0, val 0.4388 (start 0.4388)
+finetune site12: best epoch 0, val 0.7411 (start 0.7411)
+finetune site13: best epoch 7, val 0.8927 (start 0.8915)
+finetune site14: best epoch 1, val 0.7407 (start 0.7379)
+finetune site15: best epoch 4, val 0.6478 (start 0.6447)
+finetune site16: best epoch 11, val 0.7040 (start 0.6992)
+finetune site17: best epoch 30, val 0.9071 (start 0.9026)
+finetune site18: best epoch 28, val 0.7678 (start 0.7654)
+finetune site19: best epoch 0, val 0.6154 (start 0.6154)
+finetune site20: best epoch 0, val 0.8607 (start 0.8607)
+finetune site21: best epoch 26, val 0.7286 (start 0.7283)
+finetune site22: best epoch 7, val 0.9218 (start 0.9213)
+finetune site23: best epoch 28, val 0.8603 (start 0.8595)
+{
+  "run_name": "modality__in_local_1+ft30__f4__s0",
+  "n_test_cases": 241,
+  "hours": 2.39,
+  "dice_WT": 0.8920258997390498,
+  "dice_TC": 0.7957931760714692,
+  "dice_ET": 0.7008246066327053,
+  "dice_mean": 0.7962145608144081
+}
