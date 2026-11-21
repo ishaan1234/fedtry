@@ -1,0 +1,3 @@
+task 107: --split decoder_local --het site_modality --fold 3
+run site_modality__decoder_local__f3__s0: 23 sites, 804 train / 201 val / 246 test cases, device cuda
+split decoder_local: 30 shared tensors, 30 local tensors
