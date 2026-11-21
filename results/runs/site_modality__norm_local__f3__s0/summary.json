@@ -1,0 +1,9 @@
+{
+  "run_name": "site_modality__norm_local__f3__s0",
+  "n_test_cases": 246,
+  "hours": 1.9,
+  "dice_WT": 0.8943284303837062,
+  "dice_TC": 0.7975312715683343,
+  "dice_ET": 0.7023005461542355,
+  "dice_mean": 0.7980534160354255
+}
