@@ -302,3 +302,12 @@ round 297/300 loss 0.2198 25s  eta 0.0h
 round 298/300 loss 0.2172 21s  eta 0.0h
 round 299/300 loss 0.2183 25s  eta 0.0h
 round 300/300 loss 0.2174 40s  eta 0.0h
+{
+  "run_name": "site_modality__decoder_local__f3__s0",
+  "n_test_cases": 246,
+  "hours": 2.12,
+  "dice_WT": 0.8789082219068333,
+  "dice_TC": 0.7701056256205768,
+  "dice_ET": 0.6857620462417175,
+  "dice_mean": 0.778258631256376
+}
