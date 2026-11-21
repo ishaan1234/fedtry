@@ -1,0 +1,9 @@
+{
+  "run_name": "site_modality__fedavg__f3__s0",
+  "n_test_cases": 246,
+  "hours": 2.07,
+  "dice_WT": 0.8864968031955084,
+  "dice_TC": 0.7814712025435503,
+  "dice_ET": 0.677360515535376,
+  "dice_mean": 0.781776173758145
+}
