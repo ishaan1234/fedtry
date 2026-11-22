@@ -290,3 +290,24 @@ round 286/300 loss 0.2178 25s  eta 0.1h
 round 287/300 loss 0.2158 23s  eta 0.1h
 round 288/300 loss 0.2196 22s  eta 0.1h
 round 289/300 loss 0.2173 20s  eta 0.1h
+push_results: pushed (progress: array task 140)
+round 290/300 loss 0.2185 41s  eta 0.1h
+round 291/300 loss 0.2188 26s  eta 0.1h
+round 292/300 loss 0.2188 25s  eta 0.1h
+round 293/300 loss 0.2178 20s  eta 0.0h
+round 294/300 loss 0.2175 23s  eta 0.0h
+round 295/300 loss 0.2164 21s  eta 0.0h
+round 296/300 loss 0.2167 24s  eta 0.0h
+round 297/300 loss 0.2164 25s  eta 0.0h
+round 298/300 loss 0.2137 21s  eta 0.0h
+round 299/300 loss 0.2159 22s  eta 0.0h
+round 300/300 loss 0.2161 39s  eta 0.0h
+{
+  "run_name": "site_modality__decoder_local__f4__s0",
+  "n_test_cases": 241,
+  "hours": 2.12,
+  "dice_WT": 0.8831262625437882,
+  "dice_TC": 0.7774323221854536,
+  "dice_ET": 0.6845933398667366,
+  "dice_mean": 0.7817173081986595
+}
