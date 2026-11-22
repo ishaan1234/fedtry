@@ -1,0 +1,9 @@
+{
+  "run_name": "modality__decoder_local__f4__s0",
+  "n_test_cases": 241,
+  "hours": 2.03,
+  "dice_WT": 0.8814124447319065,
+  "dice_TC": 0.7852472129172199,
+  "dice_ET": 0.6903454461421235,
+  "dice_mean": 0.7856683679304165
+}
