@@ -1,3 +1,22 @@
 task 140: --split decoder_local --het site_modality --fold 4
 run site_modality__decoder_local__f4__s0: 23 sites, 807 train / 203 val / 241 test cases, device cuda
 split decoder_local: 30 shared tensors, 30 local tensors
+round 1/300 loss 1.1661 71s  eta 5.9h
+round 2/300 loss 0.8349 20s  eta 3.8h
+round 3/300 loss 0.7406 20s  eta 3.1h
+round 4/300 loss 0.6984 20s  eta 2.7h
+round 5/300 loss 0.6649 20s  eta 2.5h
+round 6/300 loss 0.6413 20s  eta 2.4h
+round 7/300 loss 0.6266 20s  eta 2.2h
+round 8/300 loss 0.6074 20s  eta 2.2h
+round 9/300 loss 0.5912 20s  eta 2.1h
+round 10/300 loss 0.5838 129s  eta 2.9h
+round 11/300 loss 0.5684 20s  eta 2.8h
+round 12/300 loss 0.5569 20s  eta 2.7h
+round 13/300 loss 0.5562 21s  eta 2.6h
+round 14/300 loss 0.5454 21s  eta 2.5h
+round 15/300 loss 0.5312 21s  eta 2.5h
+round 16/300 loss 0.5215 20s  eta 2.4h
+round 17/300 loss 0.5196 20s  eta 2.3h
+round 18/300 loss 0.5075 21s  eta 2.3h
+round 19/300 loss 0.5007 22s  eta 2.3h
