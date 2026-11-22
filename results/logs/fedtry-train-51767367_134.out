@@ -211,3 +211,102 @@ round 207/300 loss 0.2437 21s  eta 0.6h
 round 208/300 loss 0.2392 20s  eta 0.6h
 round 209/300 loss 0.2449 20s  eta 0.6h
 round 210/300 loss 0.2418 36s  eta 0.6h
+round 211/300 loss 0.2412 21s  eta 0.6h
+round 212/300 loss 0.2442 21s  eta 0.5h
+round 213/300 loss 0.2422 21s  eta 0.5h
+round 214/300 loss 0.2425 21s  eta 0.5h
+round 215/300 loss 0.2452 21s  eta 0.5h
+round 216/300 loss 0.2385 21s  eta 0.5h
+round 217/300 loss 0.2381 20s  eta 0.5h
+round 218/300 loss 0.2373 20s  eta 0.5h
+round 219/300 loss 0.2381 20s  eta 0.5h
+round 220/300 loss 0.2422 36s  eta 0.5h
+round 221/300 loss 0.2424 21s  eta 0.5h
+round 222/300 loss 0.2387 21s  eta 0.5h
+round 223/300 loss 0.2326 21s  eta 0.5h
+round 224/300 loss 0.2430 21s  eta 0.5h
+round 225/300 loss 0.2410 21s  eta 0.5h
+round 226/300 loss 0.2371 20s  eta 0.5h
+round 227/300 loss 0.2389 20s  eta 0.5h
+round 228/300 loss 0.2382 20s  eta 0.4h
+round 229/300 loss 0.2344 21s  eta 0.4h
+round 230/300 loss 0.2375 36s  eta 0.4h
+round 231/300 loss 0.2413 21s  eta 0.4h
+round 232/300 loss 0.2350 21s  eta 0.4h
+round 233/300 loss 0.2396 21s  eta 0.4h
+round 234/300 loss 0.2404 21s  eta 0.4h
+round 235/300 loss 0.2399 21s  eta 0.4h
+round 236/300 loss 0.2356 21s  eta 0.4h
+round 237/300 loss 0.2379 21s  eta 0.4h
+round 238/300 loss 0.2343 21s  eta 0.4h
+round 239/300 loss 0.2369 21s  eta 0.4h
+round 240/300 loss 0.2319 36s  eta 0.4h
+round 241/300 loss 0.2416 21s  eta 0.4h
+round 242/300 loss 0.2448 21s  eta 0.4h
+round 243/300 loss 0.2376 20s  eta 0.4h
+round 244/300 loss 0.2408 20s  eta 0.3h
+round 245/300 loss 0.2357 20s  eta 0.3h
+round 246/300 loss 0.2325 21s  eta 0.3h
+round 247/300 loss 0.2318 21s  eta 0.3h
+round 248/300 loss 0.2339 21s  eta 0.3h
+round 249/300 loss 0.2359 21s  eta 0.3h
+round 250/300 loss 0.2345 36s  eta 0.3h
+round 251/300 loss 0.2312 21s  eta 0.3h
+round 252/300 loss 0.2358 21s  eta 0.3h
+round 253/300 loss 0.2338 21s  eta 0.3h
+round 254/300 loss 0.2288 21s  eta 0.3h
+round 255/300 loss 0.2327 21s  eta 0.3h
+round 256/300 loss 0.2352 21s  eta 0.3h
+round 257/300 loss 0.2415 21s  eta 0.3h
+round 258/300 loss 0.2285 21s  eta 0.3h
+round 259/300 loss 0.2349 21s  eta 0.3h
+round 260/300 loss 0.2339 36s  eta 0.2h
+round 261/300 loss 0.2325 20s  eta 0.2h
+round 262/300 loss 0.2350 20s  eta 0.2h
+round 263/300 loss 0.2279 21s  eta 0.2h
+round 264/300 loss 0.2277 21s  eta 0.2h
+round 265/300 loss 0.2369 21s  eta 0.2h
+round 266/300 loss 0.2321 20s  eta 0.2h
+round 267/300 loss 0.2302 21s  eta 0.2h
+round 268/300 loss 0.2356 21s  eta 0.2h
+round 269/300 loss 0.2278 20s  eta 0.2h
+round 270/300 loss 0.2277 36s  eta 0.2h
+round 271/300 loss 0.2290 20s  eta 0.2h
+round 272/300 loss 0.2268 21s  eta 0.2h
+round 273/300 loss 0.2322 21s  eta 0.2h
+round 274/300 loss 0.2288 20s  eta 0.2h
+round 275/300 loss 0.2279 21s  eta 0.2h
+round 276/300 loss 0.2323 21s  eta 0.1h
+round 277/300 loss 0.2311 21s  eta 0.1h
+round 278/300 loss 0.2324 21s  eta 0.1h
+round 279/300 loss 0.2300 20s  eta 0.1h
+round 280/300 loss 0.2252 36s  eta 0.1h
+round 281/300 loss 0.2301 21s  eta 0.1h
+round 282/300 loss 0.2287 21s  eta 0.1h
+round 283/300 loss 0.2210 21s  eta 0.1h
+round 284/300 loss 0.2271 21s  eta 0.1h
+round 285/300 loss 0.2266 21s  eta 0.1h
+round 286/300 loss 0.2246 21s  eta 0.1h
+round 287/300 loss 0.2234 21s  eta 0.1h
+round 288/300 loss 0.2267 21s  eta 0.1h
+round 289/300 loss 0.2311 21s  eta 0.1h
+round 290/300 loss 0.2310 36s  eta 0.1h
+round 291/300 loss 0.2253 21s  eta 0.1h
+round 292/300 loss 0.2272 20s  eta 0.0h
+round 293/300 loss 0.2299 20s  eta 0.0h
+round 294/300 loss 0.2279 21s  eta 0.0h
+round 295/300 loss 0.2289 21s  eta 0.0h
+round 296/300 loss 0.2249 20s  eta 0.0h
+round 297/300 loss 0.2269 21s  eta 0.0h
+round 298/300 loss 0.2293 21s  eta 0.0h
+round 299/300 loss 0.2247 21s  eta 0.0h
+round 300/300 loss 0.2263 36s  eta 0.0h
+{
+  "run_name": "site_modality__fedavg__f4__s0",
+  "n_test_cases": 241,
+  "hours": 1.88,
+  "dice_WT": 0.898255607360715,
+  "dice_TC": 0.7846020905495718,
+  "dice_ET": 0.6763092120919623,
+  "dice_mean": 0.7863889700007497
+}
